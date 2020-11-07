@@ -7,8 +7,9 @@
   "author": "Au-c <firefirefold@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@vuepress/plugin-pwa": "^1.7.1",
     "vuepress": "^1.7.1",
-     "vuepress-theme-reco": "1.5.7"
+    "vuepress-theme-reco": "1.5.7"
   },
   "dependencies": {
     "vue-class-component": "^7.2.3",
