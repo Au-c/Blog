@@ -5,7 +5,7 @@ const friendLinkConf = require("./config/friendLinkConf");
 const pluginsConf = require("./config/pluginsConf");
 
 module.exports = {
-  base: "/blogs/",
+  base: "/Blog/",
   title: "Auc的个人博客",
   description: "岁不寒无以知松柏，事不难无以知君子",
   dest: "public",
