@@ -1,0 +1,22 @@
+{
+  "name": "Auc-Blog",
+  "version": "1.0.0",
+  "description": "There is the place to write blog for Auc",
+  "main": "index.js",
+  "repository": "git@github.com:Au-c/Blog.git",
+  "author": "Au-c <firefirefold@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev . --open --host \"localhost\"",
+    "build": "vuepress build .",
+    "deploy": "bash deploy.sh"
+  },
+  "devDependencies": {
+    "vuepress": "1.5.4",
+    "vuepress-theme-reco": "1.5.7"
+  },
+  "dependencies": {
+    "vue-class-component": "^7.2.3",
+    "vuepress-plugin-auto-sidebar": "^1.5.0"
+  }
+}
