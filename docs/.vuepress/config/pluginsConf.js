@@ -1,10 +1,13 @@
+const secret = require("./secret");
+const moment = require("moment");
+moment.locale("zh-cn");
 module.exports = {
-  // // 插件：文章末尾显示最新commit时间
-  // "@vuepress/last-updated": {
-  //   transformer: (timestamp) => {
-  //     return moment(timestamp).format("YYYY年MM月DD日HH时");
-  //   },
-  // },
+  // 插件：文章末尾显示最新commit时间
+  "@vuepress/last-updated": {
+    transformer: (timestamp) => {
+      return moment(timestamp).format("YYYY年MM月DD日HH时");
+    },
+  },
   // 插件：PWA
   "@vuepress/pwa": {
     serviceWorker: true,
@@ -19,15 +22,15 @@ module.exports = {
   //   platform: "github-v4",
   //   // 其他的 Vssue 配置
   //   owner: "Au-c",
-  //   repo: "blogs",
+  //   repo: "Blog",
   //   clientId: secret.clientId,
   //   clientSecret: secret.clientSecret,
   //   autoCreateIssue: true,
   // },
-  // // 插件：谷歌数据监控
-  // "@vuepress/google-analytics": {
-  //   ga: secret.ga,
-  // },
+  // 插件：谷歌数据监控
+  "@vuepress/google-analytics": {
+    ga: secret.ga,
+  },
   //插件：自动生成sidebar
   "vuepress-plugin-auto-sidebar": {},
 };

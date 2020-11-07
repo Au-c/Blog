@@ -1,5 +1,7 @@
 module.exports = {
-  clientId: "7cce8d65b5c0f3aa81bf",
-  clientSecret: "5f850697bc3dd30e6498d5e05d5fb16ef188e7a8",
+  // clientId: "219b065fe1ebdc9a72ad",
+  // clientSecret: "3ca8ecea176b4b038ec7062ae1dadb19c1487342",
+  appId: "aahptw02ExhF0IfKlpclDG8o-9Nh9j0Va",
+  appKey: "BBevescVsdVkxVs7b9De0xnn",
   ga: "UA-181762966-1", // UA-00000000-0
 };
