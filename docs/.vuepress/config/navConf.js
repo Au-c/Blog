@@ -11,17 +11,17 @@ module.exports = [
   },
   {
     text: "碎片",
-    icon: "reco-message",
+    icon: "reco-document",
     items: [
       {
         text: "心情",
-        link: "/docs/mood/",
+        link: "/thought/随笔/",
       },
     ],
   },
   {
     text: "联系我",
-    icon: "reco-message",
+    icon: "reco-tongzhi",
     items: [
       {
         text: "GitHub",

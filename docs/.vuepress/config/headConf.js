@@ -4,8 +4,7 @@ module.exports = [
     "meta",
     {
       name: "keywords",
-      content:
-        "Auc的个人博客",
+      content: "Auc的个人博客",
     },
   ],
   ["link", { rel: "icon", href: "/icons/favion.ico" }],
@@ -27,4 +26,22 @@ module.exports = [
     { name: "msapplication-TileImage", content: "/icons/icon-192x192.png" },
   ],
   ["meta", { name: "msapplication-TileColor", content: "#000000" }],
+  // 引入jquery
+  [
+    "script",
+    {
+      language: "javascript",
+      type: "text/javascript",
+      src: "https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js",
+    },
+  ],
+  // 引入鼠标点击动画脚本
+  [
+    "script",
+    {
+      language: "javascript",
+      type: "text/javascript",
+      src: "/js/MouseClickEffect.js",
+    },
+  ],
 ];

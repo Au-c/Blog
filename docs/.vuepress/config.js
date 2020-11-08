@@ -19,6 +19,7 @@ module.exports = {
   },
   plugins: pluginsConf,
   themeConfig: {
+    noFoundPageByTencent: false,
     subSidebar: "auto", //在所有页面中启用自动生成子侧边栏，原 sidebar 仍然兼容
     locales: {
       "/": {
@@ -57,7 +58,7 @@ module.exports = {
     searchMaxSuggestions: 10,
     lastUpdated: "最近更新于",
     author: "Auc",
-    authorAvatar: "/assets/img/logo.png",
+    authorAvatar: "/assets/img/user.png",
     record: "备案号暂无",
     startYear: "2020",
     /**

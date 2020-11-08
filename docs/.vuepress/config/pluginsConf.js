@@ -33,4 +33,20 @@ module.exports = {
   },
   //插件：自动生成sidebar
   "vuepress-plugin-auto-sidebar": {},
+
+  // // 插件：点击出现星星
+  // "cursor-effects": {
+  //   size: 2, // size of the particle, default: 2
+  //   shape: ["star"], // shape of the particle, default: 'star' options: 'circle'
+  //   zIndex: 999999999, // z-index property of the canvas, default: 999999999
+  // },
+
+  //插件：动态标签栏显示
+  "dynamic-title": {
+    showIcon: "/favicon.ico",
+    showText: "知己、可咫尺、可天涯 ",
+    hideIcon: "/failure.ico",
+    hideText: "你若待、般般称意 ",
+    recoverTime: 2000,
+  },
 };
