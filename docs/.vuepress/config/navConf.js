@@ -5,13 +5,27 @@ module.exports = [
     icon: "reco-home",
   },
   {
+    text: "文档",
+    icon: "reco-document",
+    items: [
+      {
+        text: "Vueのapi",
+        link: "/document/Vue-api/",
+      },
+      {
+        text: "test",
+        link: "/document/",
+      },
+    ],
+  },
+  {
     text: "时间线",
     link: "/timeline/",
     icon: "reco-date",
   },
   {
     text: "碎片",
-    icon: "reco-document",
+    icon: "reco-message",
     items: [
       {
         text: "心情",
