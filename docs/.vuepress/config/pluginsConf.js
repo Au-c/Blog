@@ -49,4 +49,22 @@ module.exports = {
     hideText: "你若待、般般称意 ",
     recoverTime: 2000,
   },
+
+  // 音乐播放器
+  meting: {
+    meting: {
+      auto: "https://music.163.com/#/playlist?id=374513891",
+    },
+    aplayer: {
+      fixed: true,
+      mini: true,
+      theme: "#282c344f",
+      IrcType: 3,
+      listFolded: true,
+    },
+    mobile: {
+      cover: false,
+      lrc: true,
+    },
+  },
 };

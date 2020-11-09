@@ -105,3 +105,7 @@ dist
 
 # 隐藏个人信息
 secret.js
+
+blogs/
+
+thought/
