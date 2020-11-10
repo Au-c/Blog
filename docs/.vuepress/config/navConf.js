@@ -13,8 +13,16 @@ module.exports = [
         link: "/document/Vue-api/",
       },
       {
-        text: "test",
-        link: "/document/",
+        text: "Vue Router",
+        link: "/document/Vue-Router/",
+      },
+      {
+        text: "axios",
+        link: "/document/axios/",
+      },
+      {
+        text: "Vue CLI",
+        link: "/document/Vue-cli/",
       },
     ],
   },
