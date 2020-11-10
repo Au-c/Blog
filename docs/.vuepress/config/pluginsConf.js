@@ -53,7 +53,7 @@ module.exports = {
   // 音乐播放器
   meting: {
     meting: {
-      auto: "https://music.163.com/#/playlist?id=374513891",
+      auto: "https://music.163.com/#/playlist?id=5328388087",
     },
     aplayer: {
       fixed: true,
