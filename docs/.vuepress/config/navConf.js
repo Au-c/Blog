@@ -27,6 +27,20 @@ module.exports = [
     ],
   },
   {
+    text: "面试",
+    icon: "reco-coding",
+    items: [
+      {
+        text: "JS",
+        link: "/exercises/JS/"
+      },
+      {
+        text: "Vue",
+        link: "/exercises/Vue/"
+      }
+    ]
+  },
+  {
     text: "时间线",
     link: "/timeline/",
     icon: "reco-date",
