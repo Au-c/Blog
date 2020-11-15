@@ -37,6 +37,10 @@ module.exports = [
       {
         text: "Vue",
         link: "/exercises/Vue/"
+      },
+      {
+        text: "基础",
+        link: "/exercises/basic/"
       }
     ]
   },
