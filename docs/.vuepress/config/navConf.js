@@ -57,6 +57,10 @@ module.exports = [
         text: "心情",
         link: "/thought/随笔/",
       },
+      {
+        text: '一些"坑"',
+        link: "/thought/一些 traps/",
+      },
     ],
   },
   {
