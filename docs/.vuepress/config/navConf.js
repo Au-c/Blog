@@ -59,7 +59,7 @@ module.exports = [
       },
       {
         text: '一些"坑"',
-        link: "/thought/一些 traps/",
+        link: "/thought/一些traps/",
       },
     ],
   },
