@@ -5,6 +5,28 @@ module.exports = [
     icon: "reco-home",
   },
   {
+    text: "笔记",
+    icon: "reco-blog",
+    items: [
+      {
+        text: "CSS",
+        link: "/notes/CSS/",
+      },
+      {
+        text: 'ES6',
+        link: "/notes/ES6/ES6-00.md",
+      },
+      {
+        text: "JavaScript",
+        link: "/notes/JavaScript/JavaScript进阶/ES5-00.md",
+      },
+      {
+        text: "Vue",
+        link: "/notes/Vue/Vue-basic/vue-00.md",
+      },
+    ],
+  },
+  {
     text: "文档",
     icon: "reco-document",
     items: [
@@ -48,20 +70,6 @@ module.exports = [
     text: "时间线",
     link: "/timeline/",
     icon: "reco-date",
-  },
-  {
-    text: "碎片",
-    icon: "reco-message",
-    items: [
-      {
-        text: "心情",
-        link: "/thought/随笔/",
-      },
-      {
-        text: '一些"坑"',
-        link: "/thought/一些traps/",
-      },
-    ],
   },
   {
     text: "联系我",
