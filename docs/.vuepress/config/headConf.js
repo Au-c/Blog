@@ -43,12 +43,5 @@ module.exports = [
       type: "text/javascript",
       src: "/js/MouseClickEffect.js",
     },
-  ],
-  [
-    "link",
-    {
-      rel: "styleSheet",
-      href: "/mouseCSS/mouse.css"
-    }
   ]
 ];
