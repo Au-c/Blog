@@ -24,6 +24,10 @@ module.exports = [
         text: "Vue",
         link: "/notes/Vue/Vue-basic/vue-00.md",
       },
+      {
+        text: "C语言",
+        link: "/notes/C/C-00.md",
+      }
     ],
   },
   {
