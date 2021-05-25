@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>结构体 | Auc的个人博客</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/Blog/icons/favion.ico">
+    <link rel="manifest" href="/Blog/manifest.json">
+    <link rel="apple-touch-icon" href="/Blog/icons/icon-192x192.png">
+    <link rel="mask-icon" href="/Blog/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <script language="javascript" type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/Blog/js/MouseClickEffect.js"></script>
+    <meta name="description" content="岁不寒无以知松柏，事不难无以知君子">
+    <meta name="author" content="Auc">
+    <meta name="keywords" content="Auc的个人博客">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/icon-192x192.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/Blog/assets/css/0.styles.85d18feb.css" as="style"><link rel="preload" href="/Blog/assets/js/app.ed588e5d.js" as="script"><link rel="preload" href="/Blog/assets/js/3.6a7c9835.js" as="script"><link rel="preload" href="/Blog/assets/js/1.f1f5dd21.js" as="script"><link rel="preload" href="/Blog/assets/js/46.cc7f5faf.js" as="script"><link rel="preload" href="/Blog/assets/js/8.0694a070.js" as="script"><link rel="prefetch" href="/Blog/assets/js/10.12345786.js"><link rel="prefetch" href="/Blog/assets/js/11.0163dc94.js"><link rel="prefetch" href="/Blog/assets/js/12.47045407.js"><link rel="prefetch" href="/Blog/assets/js/13.845998fc.js"><link rel="prefetch" href="/Blog/assets/js/14.fbd70b53.js"><link rel="prefetch" href="/Blog/assets/js/15.61566dfe.js"><link rel="prefetch" href="/Blog/assets/js/16.9e736e50.js"><link rel="prefetch" href="/Blog/assets/js/17.514de8f0.js"><link rel="prefetch" href="/Blog/assets/js/18.2df4b2f3.js"><link rel="prefetch" href="/Blog/assets/js/19.81bf263d.js"><link rel="prefetch" href="/Blog/assets/js/20.d7cbafbe.js"><link rel="prefetch" href="/Blog/assets/js/21.86f89b49.js"><link rel="prefetch" href="/Blog/assets/js/22.5daf6fdd.js"><link rel="prefetch" href="/Blog/assets/js/23.5202da3d.js"><link rel="prefetch" href="/Blog/assets/js/24.1d27e2d2.js"><link rel="prefetch" href="/Blog/assets/js/25.5ce4353b.js"><link rel="prefetch" href="/Blog/assets/js/26.a8926fcc.js"><link rel="prefetch" href="/Blog/assets/js/27.a4ab804f.js"><link rel="prefetch" href="/Blog/assets/js/28.7fc7cf45.js"><link rel="prefetch" href="/Blog/assets/js/29.7ff050e8.js"><link rel="prefetch" href="/Blog/assets/js/30.7a9ca647.js"><link rel="prefetch" href="/Blog/assets/js/31.cc497155.js"><link rel="prefetch" href="/Blog/assets/js/32.778f100f.js"><link rel="prefetch" href="/Blog/assets/js/33.7092da09.js"><link rel="prefetch" href="/Blog/assets/js/34.417d60ce.js"><link rel="prefetch" href="/Blog/assets/js/35.96810473.js"><link rel="prefetch" href="/Blog/assets/js/36.79b57abd.js"><link rel="prefetch" href="/Blog/assets/js/37.f84eb5b9.js"><link rel="prefetch" href="/Blog/assets/js/38.259bf3bb.js"><link rel="prefetch" href="/Blog/assets/js/39.07a721e2.js"><link rel="prefetch" href="/Blog/assets/js/4.0f28c5e7.js"><link rel="prefetch" href="/Blog/assets/js/40.9d96150d.js"><link rel="prefetch" href="/Blog/assets/js/41.3e74adee.js"><link rel="prefetch" href="/Blog/assets/js/42.41908c41.js"><link rel="prefetch" href="/Blog/assets/js/43.23fe2d8e.js"><link rel="prefetch" href="/Blog/assets/js/44.361e503c.js"><link rel="prefetch" href="/Blog/assets/js/45.0addf09a.js"><link rel="prefetch" href="/Blog/assets/js/47.ffd993c1.js"><link rel="prefetch" href="/Blog/assets/js/48.12a48ca2.js"><link rel="prefetch" href="/Blog/assets/js/49.40973271.js"><link rel="prefetch" href="/Blog/assets/js/5.d0743884.js"><link rel="prefetch" href="/Blog/assets/js/50.878bb86c.js"><link rel="prefetch" href="/Blog/assets/js/51.6f54ca17.js"><link rel="prefetch" href="/Blog/assets/js/52.bdeb1d2c.js"><link rel="prefetch" href="/Blog/assets/js/53.ff1b02d8.js"><link rel="prefetch" href="/Blog/assets/js/54.2e479b09.js"><link rel="prefetch" href="/Blog/assets/js/55.31a06e95.js"><link rel="prefetch" href="/Blog/assets/js/56.ef312edb.js"><link rel="prefetch" href="/Blog/assets/js/57.0968b508.js"><link rel="prefetch" href="/Blog/assets/js/58.22427c8a.js"><link rel="prefetch" href="/Blog/assets/js/59.5b6e01cf.js"><link rel="prefetch" href="/Blog/assets/js/6.7d01f74f.js"><link rel="prefetch" href="/Blog/assets/js/60.5592ec2c.js"><link rel="prefetch" href="/Blog/assets/js/61.99cd26ce.js"><link rel="prefetch" href="/Blog/assets/js/62.e52fd219.js"><link rel="prefetch" href="/Blog/assets/js/63.5c46fe21.js"><link rel="prefetch" href="/Blog/assets/js/64.dac18f6f.js"><link rel="prefetch" href="/Blog/assets/js/65.0c8e559a.js"><link rel="prefetch" href="/Blog/assets/js/66.4b85a574.js"><link rel="prefetch" href="/Blog/assets/js/67.af6a384c.js"><link rel="prefetch" href="/Blog/assets/js/68.d7b35cd1.js"><link rel="prefetch" href="/Blog/assets/js/69.321dff75.js"><link rel="prefetch" href="/Blog/assets/js/7.fede9a6f.js"><link rel="prefetch" href="/Blog/assets/js/70.e87fd710.js"><link rel="prefetch" href="/Blog/assets/js/71.ed2b7723.js"><link rel="prefetch" href="/Blog/assets/js/72.602602b0.js"><link rel="prefetch" href="/Blog/assets/js/73.98f4a444.js"><link rel="prefetch" href="/Blog/assets/js/74.9e03eae0.js"><link rel="prefetch" href="/Blog/assets/js/9.43ede2c9.js">
+    <link rel="stylesheet" href="/Blog/assets/css/0.styles.85d18feb.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-2d5f533b><div data-v-2d5f533b><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-2d5f533b data-v-2d5f533b><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-64685f0e data-v-2d5f533b data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>Auc的个人博客</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>Auc</span>
+            
+          <span data-v-64685f0e>2020 - </span>
+          2021
+        </a></span></div></div> <div class="hide" data-v-2d5f533b><header class="navbar" data-v-2d5f533b><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Blog/" class="home-link router-link-active"><img src="/Blog/assets/img/logo.png" alt="Auc的个人博客" class="logo"> <span class="site-name">Auc的个人博客</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-theme"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">选择一个主题吧~</h4> <ul class="color-mode-options"><li class="dark">暗黑</li><li class="auto active">自动</li><li class="light">明亮</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Blog/categories/JavaScript/" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/categories/Vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/categories/数据结构与算法/" class="nav-link"><i class="iconfont undefined"></i>
+  数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/categories/文档/" class="nav-link"><i class="iconfont undefined"></i>
+  文档
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/categories/面试题/" class="nav-link"><i class="iconfont undefined"></i>
+  面试题
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/categories/笔记/" class="nav-link"><i class="iconfont undefined"></i>
+  笔记
+</a></li></ul></div></div><div class="nav-item"><a href="/Blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-blog"></i>
+      笔记
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Blog/notes/CSS/" class="nav-link"><i class="iconfont undefined"></i>
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/notes/ES6/ES6-00.html" class="nav-link"><i class="iconfont undefined"></i>
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/notes/JavaScript/JavaScript进阶/ES5-00.html" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/notes/Vue/Vue-basic/vue-00.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/notes/C/C-00.html" class="nav-link"><i class="iconfont undefined"></i>
+  C语言
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Blog/document/Vue-api/" class="nav-link"><i class="iconfont undefined"></i>
+  Vueのapi
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/document/Vue-Router/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue Router
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/document/axios/" class="nav-link"><i class="iconfont undefined"></i>
+  axios
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/document/Vue-cli/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue CLI
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-coding"></i>
+      面试
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Blog/exercises/JS/" class="nav-link"><i class="iconfont undefined"></i>
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/exercises/Vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/exercises/basic/" class="nav-link"><i class="iconfont undefined"></i>
+  基础
+</a></li></ul></div></div><div class="nav-item"><a href="/Blog/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-tongzhi"></i>
+      联系我
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Au-c/Blog" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-2d5f533b></div> <aside class="sidebar" data-v-2d5f533b><div class="personal-info-wrapper" data-v-ca798c94 data-v-2d5f533b><img src="/Blog/assets/img/user.png" alt="author-avatar" class="personal-img" data-v-ca798c94> <h3 class="name" data-v-ca798c94>
+    Auc
+  </h3> <div class="num" data-v-ca798c94><div data-v-ca798c94><h3 data-v-ca798c94>62</h3> <h6 data-v-ca798c94>文章</h6></div> <div data-v-ca798c94><h3 data-v-ca798c94>11</h3> <h6 data-v-ca798c94>标签</h6></div></div> <hr data-v-ca798c94></div> <nav class="nav-links"><div class="nav-item"><a href="/Blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Blog/categories/JavaScript/" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/categories/Vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/categories/数据结构与算法/" class="nav-link"><i class="iconfont undefined"></i>
+  数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/categories/文档/" class="nav-link"><i class="iconfont undefined"></i>
+  文档
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/categories/面试题/" class="nav-link"><i class="iconfont undefined"></i>
+  面试题
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/categories/笔记/" class="nav-link"><i class="iconfont undefined"></i>
+  笔记
+</a></li></ul></div></div><div class="nav-item"><a href="/Blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-blog"></i>
+      笔记
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Blog/notes/CSS/" class="nav-link"><i class="iconfont undefined"></i>
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/notes/ES6/ES6-00.html" class="nav-link"><i class="iconfont undefined"></i>
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/notes/JavaScript/JavaScript进阶/ES5-00.html" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/notes/Vue/Vue-basic/vue-00.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/notes/C/C-00.html" class="nav-link"><i class="iconfont undefined"></i>
+  C语言
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Blog/document/Vue-api/" class="nav-link"><i class="iconfont undefined"></i>
+  Vueのapi
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/document/Vue-Router/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue Router
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/document/axios/" class="nav-link"><i class="iconfont undefined"></i>
+  axios
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/document/Vue-cli/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue CLI
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-coding"></i>
+      面试
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Blog/exercises/JS/" class="nav-link"><i class="iconfont undefined"></i>
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/exercises/Vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/exercises/basic/" class="nav-link"><i class="iconfont undefined"></i>
+  基础
+</a></li></ul></div></div><div class="nav-item"><a href="/Blog/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-tongzhi"></i>
+      联系我
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Au-c/Blog" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>C</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Blog/notes/C/C-00.html" class="sidebar-link">写在前面</a></li><li><a href="/Blog/notes/C/C-01.html" class="sidebar-link">C语言概述</a></li><li><a href="/Blog/notes/C/C-02.html" class="sidebar-link">数据类型、运算符与表达式</a></li><li><a href="/Blog/notes/C/C-03.html" class="sidebar-link">语句、函数、作用域与数组与字符串</a></li><li><a href="/Blog/notes/C/C-04.html" class="sidebar-link">指针</a></li><li><a href="/Blog/notes/C/C-05.html" aria-current="page" class="active sidebar-link">结构体</a></li><li><a href="/Blog/notes/C/C-06.html" class="sidebar-link">typedef关键字</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-64685f0e data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>结构体</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>Auc</span>
+            
+          <span data-v-64685f0e>2020 - </span>
+          2021
+        </a></span></div></div> <div data-v-2d5f533b><main class="page"><div class="page-title" style="display:none;"><h1 class="title">结构体</h1> <div data-v-3b7f5bdf><i class="iconfont reco-account" data-v-3b7f5bdf><span data-v-3b7f5bdf>Auc</span></i> <i class="iconfont reco-date" data-v-3b7f5bdf><span data-v-3b7f5bdf>2021-03-11</span></i> <i class="iconfont reco-eye" data-v-3b7f5bdf><span id="/Blog/notes/C/C-05.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-3b7f5bdf><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="iconfont reco-tag tags" data-v-3b7f5bdf><span class="tag-item" data-v-3b7f5bdf>C语言</span><span class="tag-item" data-v-3b7f5bdf>笔记</span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><h1 id="结构体"><a href="#结构体" class="header-anchor">#</a> 结构体</h1> <h2 id="认识结构体"><a href="#认识结构体" class="header-anchor">#</a> 认识结构体</h2> <h3 id="声明结构体"><a href="#声明结构体" class="header-anchor">#</a> 声明结构体</h3> <p>学过面向对象语言的同学可以类比一下，C中的结构体跟对象比较相似。可以使用<strong>结构体</strong>（Struct）来存放一组不同类型的数据。</p> <p>结构体是一种集合，它里面包含了多个变量或数组，它们的类型可以相同，也可以不同，每个这样的变量或数组都称为结构体的<strong>成员</strong>（Member）。</p> <div class="language-C line-numbers-mode"><pre class="language-c"><code><span class="token comment">/*声明结构体*/</span>
+<span class="token keyword">struct</span> 结构体名<span class="token punctuation">{</span>
+    结构体所包含的变量或数组
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><div class="language-C line-numbers-mode"><pre class="language-c"><code><span class="token keyword">struct</span> <span class="token class-name">stu</span><span class="token punctuation">{</span>
+  <span class="token keyword">char</span> <span class="token operator">*</span>name<span class="token punctuation">;</span>  <span class="token comment">//姓名</span>
+  <span class="token keyword">int</span> num<span class="token punctuation">;</span>  <span class="token comment">//学号</span>
+  <span class="token keyword">int</span> age<span class="token punctuation">;</span>  <span class="token comment">//年龄</span>
+  <span class="token keyword">char</span> group<span class="token punctuation">;</span>  <span class="token comment">//所在学习小组</span>
+  <span class="token keyword">float</span> score<span class="token punctuation">;</span>  <span class="token comment">//成绩</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><ol><li>结构体成员的定义方式与变量和数组的定义方式相同，只是不能初始化。</li> <li>注意大括号后面的分号;不能少，这是一条完整的语句。</li></ol> <h3 id="结构体变量"><a href="#结构体变量" class="header-anchor">#</a> 结构体变量</h3> <div class="language-C line-numbers-mode"><pre class="language-c"><code><span class="token comment">// 声明结构体变量 stu1, stu2</span>
+<span class="token keyword">struct</span> <span class="token class-name">stu</span> stu1<span class="token punctuation">,</span> stu2<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>也可以在定义结构体的同时定义结构体变量</p> <div class="language-C line-numbers-mode"><pre class="language-c"><code><span class="token keyword">struct</span> <span class="token class-name">stu</span><span class="token punctuation">{</span>
+  <span class="token keyword">char</span> <span class="token operator">*</span>name<span class="token punctuation">;</span>  <span class="token comment">//姓名</span>
+  <span class="token keyword">int</span> num<span class="token punctuation">;</span>  <span class="token comment">//学号</span>
+  <span class="token keyword">int</span> age<span class="token punctuation">;</span>  <span class="token comment">//年龄</span>
+  <span class="token keyword">char</span> group<span class="token punctuation">;</span>  <span class="token comment">//所在学习小组</span>
+  <span class="token keyword">float</span> score<span class="token punctuation">;</span>  <span class="token comment">//成绩</span>
+<span class="token punctuation">}</span> stu1<span class="token punctuation">,</span> stu2<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>如果只需要 stu1、stu2 两个变量，后面不需要再使用结构体名定义其他变量，那么在定义时也可以不给出结构体名</p> <div class="language-C line-numbers-mode"><pre class="language-c"><code><span class="token keyword">struct</span><span class="token punctuation">{</span>  <span class="token comment">//没有写 stu</span>
+  <span class="token keyword">char</span> <span class="token operator">*</span>name<span class="token punctuation">;</span>  <span class="token comment">//姓名</span>
+  <span class="token keyword">int</span> num<span class="token punctuation">;</span>  <span class="token comment">//学号</span>
+  <span class="token keyword">int</span> age<span class="token punctuation">;</span>  <span class="token comment">//年龄</span>
+  <span class="token keyword">char</span> group<span class="token punctuation">;</span>  <span class="token comment">//所在学习小组</span>
+  <span class="token keyword">float</span> score<span class="token punctuation">;</span>  <span class="token comment">//成绩</span>
+<span class="token punctuation">}</span> stu1<span class="token punctuation">,</span> stu2<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="结构体与结构体变量的区别"><a href="#结构体与结构体变量的区别" class="header-anchor">#</a> 结构体与结构体变量的区别</h3> <ol><li>结构体是一种自定义的数据类型，是创建变量的模板，不占用内存空间；</li> <li>结构体变量才包含了实实在在的数据，需要内存空间来存储。</li></ol> <div class="custom-block tip"><p class="custom-block-title">注意</p> <p>注意在编译器的具体实现中，各个成员之间可能会存在缝隙，对于 stu1、stu2，成员变量 group 和 score 之间就存在 3 个字节的空白填充（见下图）。这样算来，stu1、stu2 其实占用了 17 + 3 = 20 个字节</p></div> <div align="left"><img src="https://cdn.jsdelivr.net/gh/Au-c/PicGo@main/notes/markdownPic/20210311181842.png" width="550"></div> <h3 id="成员的获取与赋值"><a href="#成员的获取与赋值" class="header-anchor">#</a> 成员的获取与赋值</h3> <div class="language-C line-numbers-mode"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	<span class="token comment">/*【声明结构体】*/</span>
+	<span class="token keyword">struct</span> <span class="token class-name">stu</span> <span class="token punctuation">{</span>
+		<span class="token keyword">char</span> <span class="token operator">*</span>name<span class="token punctuation">;</span>
+		<span class="token keyword">int</span> age<span class="token punctuation">;</span>
+		<span class="token keyword">float</span> score<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span><span class="token punctuation">;</span>
+	<span class="token comment">/*【声明结构体变量】*/</span>
+	<span class="token keyword">struct</span> <span class="token class-name">stu</span> stu1<span class="token punctuation">,</span> stu2<span class="token punctuation">;</span>
+
+	<span class="token comment">/*上面代码等价于*/</span>
+	<span class="token comment">/*【声明结构体并同时声明结构体变量】*/</span>
+	<span class="token comment">/*
+	* struct stu {
+	*	char *name;
+	*	...
+	* } stu1, stu2;
+	*/</span>
+
+	<span class="token comment">/*【给结构体成员赋值】*/</span>
+	stu1<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">&quot;Jack&quot;</span><span class="token punctuation">;</span>
+	stu1<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">18</span><span class="token punctuation">;</span>
+	stu1<span class="token punctuation">.</span>score <span class="token operator">=</span> <span class="token number">138.5</span><span class="token punctuation">;</span>
+
+	<span class="token comment">/*可以更精简一点，上面代码等价于*/</span>
+	<span class="token comment">/*【声明结构体并同时声明结构体变量并同时给结构体成员赋值】*/</span>
+	<span class="token comment">/*
+	* struct {
+	*	char *name;
+	*	...
+	* } stu1, stu2 = { &quot;Jack&quot;, 18, 138.5};
+	*/</span>
+
+	<span class="token comment">/*【读取结构体成员的值】*/</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;性名：%s\n年龄：%d\n成绩：%f\n&quot;</span><span class="token punctuation">,</span> stu1<span class="token punctuation">.</span>name<span class="token punctuation">,</span> stu1<span class="token punctuation">.</span>age<span class="token punctuation">,</span> stu1<span class="token punctuation">.</span>score<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br></div></div><p><strong>注意</strong></p> <p>上例中整体赋值仅限于定义结构体变量的时候，在使用过程中只能对成员逐一赋值，这和数组的赋值非常类似。</p> <h2 id="结构体数组"><a href="#结构体数组" class="header-anchor">#</a> 结构体数组</h2> <p><strong>结构体数组</strong>: 是指数组中的每个元素都是一个结构体。在实际应用中，C语言结构体数组常被用来表示一个拥有相同数据结构的群体，比如一个班的学生、一个车间的职工等。</p> <h3 id="简单定义结构体数组"><a href="#简单定义结构体数组" class="header-anchor">#</a> 简单定义结构体数组</h3> <div class="language-C line-numbers-mode"><pre class="language-c"><code><span class="token keyword">struct</span> <span class="token class-name">stu</span><span class="token punctuation">{</span>
+    <span class="token keyword">char</span> <span class="token operator">*</span>name<span class="token punctuation">;</span>  <span class="token comment">//姓名</span>
+    <span class="token keyword">int</span> age<span class="token punctuation">;</span>  <span class="token comment">//年龄</span>
+    <span class="token keyword">float</span> score<span class="token punctuation">;</span>  <span class="token comment">//成绩</span>
+<span class="token punctuation">}</span>class<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token comment">// 表示一个班级有5个学生。</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="定义时同时初始化"><a href="#定义时同时初始化" class="header-anchor">#</a> 定义时同时初始化</h3> <p>结构体数组在定义的同时也可以初始化</p> <div class="language-C line-numbers-mode"><pre class="language-c"><code><span class="token keyword">struct</span> <span class="token class-name">stu</span><span class="token punctuation">{</span>
+    <span class="token keyword">char</span> <span class="token operator">*</span>name<span class="token punctuation">;</span>  <span class="token comment">//姓名</span>
+    <span class="token keyword">int</span> age<span class="token punctuation">;</span>  <span class="token comment">//年龄</span>
+    <span class="token keyword">float</span> score<span class="token punctuation">;</span>  <span class="token comment">//成绩</span>
+<span class="token punctuation">}</span>class<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">{</span><span class="token string">&quot;张三&quot;</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span> <span class="token number">145.0</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span><span class="token string">&quot;李四&quot;</span><span class="token punctuation">,</span> <span class="token number">19</span><span class="token punctuation">,</span> <span class="token number">130.5</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span><span class="token string">&quot;王五&quot;</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span> <span class="token number">148.5</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="省略数组长度"><a href="#省略数组长度" class="header-anchor">#</a> 省略数组长度</h3> <p>当对数组中全部元素赋值时，也可不给出数组长度</p> <div class="language-C line-numbers-mode"><pre class="language-c"><code><span class="token keyword">struct</span> <span class="token class-name">stu</span><span class="token punctuation">{</span>
+    <span class="token keyword">char</span> <span class="token operator">*</span>name<span class="token punctuation">;</span>  <span class="token comment">//姓名</span>
+    <span class="token keyword">int</span> age<span class="token punctuation">;</span>  <span class="token comment">//年龄</span>
+    <span class="token keyword">float</span> score<span class="token punctuation">;</span>  <span class="token comment">//成绩</span>
+<span class="token punctuation">}</span>class<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">{</span><span class="token string">&quot;张三&quot;</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span> <span class="token number">145.0</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span><span class="token string">&quot;李四&quot;</span><span class="token punctuation">,</span> <span class="token number">19</span><span class="token punctuation">,</span> <span class="token number">130.5</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span><span class="token string">&quot;王五&quot;</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span> <span class="token number">148.5</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="使用结构体数组中元素的成员"><a href="#使用结构体数组中元素的成员" class="header-anchor">#</a> 使用结构体数组中元素的成员</h3> <ol><li>单独初始化: <code>class[0].name = &quot;张三&quot;</code>；</li> <li>获取: <code>int liSiAge = class[1].age</code>。</li></ol> <h3 id="综合示例"><a href="#综合示例" class="header-anchor">#</a> 综合示例</h3> <div class="language-C line-numbers-mode"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token comment">/*1. 打印班级表格*/</span>
+<span class="token comment">/*2. 计算全班学生的总成绩、平均成绩和以及 140 分以下的人数*/</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	<span class="token keyword">struct</span> <span class="token class-name">stu</span> <span class="token punctuation">{</span>
+		<span class="token keyword">char</span><span class="token operator">*</span> name<span class="token punctuation">;</span>
+		<span class="token keyword">int</span> age<span class="token punctuation">;</span>
+		<span class="token keyword">float</span> score<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span> class<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+		<span class="token punctuation">{</span><span class="token string">&quot;张三&quot;</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span> <span class="token number">145.0</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+		<span class="token punctuation">{</span><span class="token string">&quot;李四&quot;</span><span class="token punctuation">,</span> <span class="token number">19</span><span class="token punctuation">,</span> <span class="token number">130.5</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+		<span class="token punctuation">{</span><span class="token string">&quot;王五&quot;</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span> <span class="token number">148.5</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+		<span class="token punctuation">{</span><span class="token string">&quot;陈六&quot;</span><span class="token punctuation">,</span> <span class="token number">17</span><span class="token punctuation">,</span> <span class="token number">139.0</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+		<span class="token punctuation">{</span><span class="token string">&quot;张七&quot;</span><span class="token punctuation">,</span> <span class="token number">17</span><span class="token punctuation">,</span> <span class="token number">144.5</span><span class="token punctuation">}</span>
+	<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">int</span> len <span class="token operator">=</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span>class<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span><span class="token keyword">struct</span> <span class="token class-name">stu</span><span class="token punctuation">)</span><span class="token punctuation">,</span> _140num <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+	<span class="token keyword">float</span> sum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> average <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;姓名\t年龄\t成绩\t\n&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> len<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token comment">/*打印班级表格*/</span>
+		<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%s\t%d\t%.2f\t\n&quot;</span><span class="token punctuation">,</span> class<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>name<span class="token punctuation">,</span> class<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>age<span class="token punctuation">,</span> class<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>score<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+		<span class="token comment">/*计算*/</span>
+		sum <span class="token operator">+=</span> class<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>score<span class="token punctuation">;</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>class<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>score <span class="token operator">&lt;</span> <span class="token number">140</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			_140num<span class="token operator">++</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+	average <span class="token operator">=</span> sum <span class="token operator">/</span> len<span class="token punctuation">;</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;班级总成绩：%.2f\n班级平均成绩：%.2f\n140 分以下的人数：%d\n&quot;</span><span class="token punctuation">,</span> sum<span class="token punctuation">,</span> average<span class="token punctuation">,</span> _140num<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br></div></div><p>打印结果</p> <div align="left"><img src="https://cdn.jsdelivr.net/gh/Au-c/PicGo@main/notes/markdownPic/20210311194133.png" width="350"></div> <div class="custom-block tip"><p class="custom-block-title">注意</p> <p>在做本题时，遇到一个坑，C语言为强类型语言，声明时的数据类型在使用时要用对应的数据类型，比如声明时 <code>float sum;</code>，在打印时一定要用 <code>%f</code>(上例中为<code>%.2f</code>表示单精度浮点型保留两位小数)，而不能用 <code>%d</code></p></div> <h2 id="结构体指针"><a href="#结构体指针" class="header-anchor">#</a> 结构体指针</h2> <p>当一个指针变量指向结构体时，我们就称它为结构体指针</p> <p><code>struct 结构体名 *变量名;</code></p> <p>跟定义结构体变量时基本一样。</p> <h3 id="定义一个结构体指针"><a href="#定义一个结构体指针" class="header-anchor">#</a> 定义一个结构体指针</h3> <div class="language-C line-numbers-mode"><pre class="language-c"><code><span class="token comment">//结构体</span>
+<span class="token keyword">struct</span> <span class="token class-name">stu</span> <span class="token punctuation">{</span>
+    <span class="token keyword">char</span> <span class="token operator">*</span>name<span class="token punctuation">;</span>  <span class="token comment">//姓名</span>
+    <span class="token keyword">int</span> age<span class="token punctuation">;</span>  <span class="token comment">//年龄</span>
+    <span class="token keyword">float</span> score<span class="token punctuation">;</span>  <span class="token comment">//成绩</span>
+<span class="token punctuation">}</span> stu1 <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token string">&quot;Tom&quot;</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span> <span class="token number">136.5</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">// 结构体指针</span>
+<span class="token keyword">struct</span> <span class="token class-name">stu</span> <span class="token operator">*</span>pstu <span class="token operator">=</span> <span class="token operator">&amp;</span>stu1<span class="token punctuation">;</span>
+
+<span class="token comment">/*可以简写*/</span>
+<span class="token comment">//结构体</span>
+<span class="token keyword">struct</span> <span class="token class-name">stu</span> <span class="token punctuation">{</span>
+    <span class="token keyword">char</span> <span class="token operator">*</span>name<span class="token punctuation">;</span>  <span class="token comment">//姓名</span>
+    <span class="token keyword">int</span> age<span class="token punctuation">;</span>  <span class="token comment">//年龄</span>
+    <span class="token keyword">float</span> score<span class="token punctuation">;</span>  <span class="token comment">//成绩</span>
+<span class="token punctuation">}</span> stu1 <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token string">&quot;Tom&quot;</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span> <span class="token number">136.5</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token operator">*</span>pstu <span class="token operator">=</span> <span class="token operator">&amp;</span>stu1<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><div class="custom-block tip"><p class="custom-block-title">注意</p> <ol><li>结构体变量名和数组名不同，数组名在表达式中会被转换为数组指针，而结构体变量名不会，无论在任何表达式中它表示的都是整个集合本身，要想取得结构体变量的地址，必须在前面加 <code>&amp;</code>;</li> <li>万万不可直接取一个结构体名的，也不能将它赋值给其他变量，如下：</li></ol></div> <div class="language-C line-numbers-mode"><pre class="language-c"><code><span class="token keyword">struct</span> <span class="token operator">*</span>pstu <span class="token operator">=</span> <span class="token operator">&amp;</span>stu <span class="token comment">// (X)</span>
+<span class="token comment">// 因为结构体不占内存，只有结构体变量才占内存</span>
+<span class="token keyword">struct</span> <span class="token operator">*</span>pstu <span class="token operator">=</span> <span class="token operator">&amp;</span>stu1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="获取结构体成员"><a href="#获取结构体成员" class="header-anchor">#</a> 获取结构体成员</h3> <ol><li>一般形式： <code>(*pointer).memberName</code></li> <li>常用形式： <code>pointer -&gt; memberName</code></li></ol> <div class="custom-block tip"><p class="custom-block-title">注意</p> <ul><li>第一种形式中，因为 <code>.</code> 的优先级高于 <code>*</code>，所以一定别忘了括号；</li> <li>第二种写法中，<code>-&gt;</code> 是一个新的运算符，可以通过结构体指针直接取得结构体成员，这也是 <code>-&gt;</code> 在C语言中的唯一用途。</li></ul></div> <h3 id="示例"><a href="#示例" class="header-anchor">#</a> 示例</h3> <ol><li>结构体指针的使用</li></ol> <div class="language-C line-numbers-mode"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token comment">/*使用结构体指针*/</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">struct</span> <span class="token class-name">stu</span>
+	<span class="token punctuation">{</span>
+		<span class="token keyword">char</span> <span class="token operator">*</span>name<span class="token punctuation">;</span>
+		<span class="token keyword">int</span> age<span class="token punctuation">;</span>
+		<span class="token keyword">float</span> score<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span> stu1 <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token string">&quot;Tom&quot;</span><span class="token punctuation">,</span> <span class="token number">24</span><span class="token punctuation">,</span> <span class="token number">135.5</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token operator">*</span>p <span class="token operator">=</span> <span class="token operator">&amp;</span>stu1<span class="token punctuation">;</span>
+
+	<span class="token comment">/*使用普通结构体变量成员*/</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;姓名：%s\n年龄：%d\n成绩：%.2f\n&quot;</span><span class="token punctuation">,</span> stu1<span class="token punctuation">.</span>name<span class="token punctuation">,</span> stu1<span class="token punctuation">.</span>age<span class="token punctuation">,</span> stu1<span class="token punctuation">.</span>score<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token comment">/*使用结构体指针访问成员*/</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;姓名：%s\n年龄：%d\n成绩：%.2f\n&quot;</span><span class="token punctuation">,</span> p<span class="token operator">-&gt;</span>name<span class="token punctuation">,</span> p<span class="token operator">-&gt;</span>age<span class="token punctuation">,</span> p<span class="token operator">-&gt;</span>score<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token comment">/*二者打印结果一致*/</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><ol start="2"><li>使用结构体数组指针</li></ol> <div class="language-C line-numbers-mode"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	<span class="token keyword">struct</span> <span class="token class-name">str</span> <span class="token punctuation">{</span>
+		<span class="token keyword">char</span> <span class="token operator">*</span>name<span class="token punctuation">;</span>
+		<span class="token keyword">int</span> age<span class="token punctuation">;</span>
+		<span class="token keyword">float</span> score<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span> class<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+		<span class="token punctuation">{</span><span class="token string">&quot;张三&quot;</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span> <span class="token number">145.0</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+		<span class="token punctuation">{</span><span class="token string">&quot;李四&quot;</span><span class="token punctuation">,</span> <span class="token number">19</span><span class="token punctuation">,</span> <span class="token number">130.5</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+		<span class="token punctuation">{</span><span class="token string">&quot;王五&quot;</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span> <span class="token number">148.5</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+		<span class="token punctuation">{</span><span class="token string">&quot;陈六&quot;</span><span class="token punctuation">,</span> <span class="token number">17</span><span class="token punctuation">,</span> <span class="token number">139.0</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+		<span class="token punctuation">{</span><span class="token string">&quot;张七&quot;</span><span class="token punctuation">,</span> <span class="token number">17</span><span class="token punctuation">,</span> <span class="token number">144.5</span><span class="token punctuation">}</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token operator">*</span>p <span class="token operator">=</span> class<span class="token punctuation">;</span>
+
+	<span class="token keyword">int</span> len <span class="token operator">=</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span>class<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span><span class="token keyword">struct</span> <span class="token class-name">str</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> len<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">,</span> p<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;姓名：%s\t年龄：%d\t成绩：%.1f\t\n&quot;</span><span class="token punctuation">,</span> p<span class="token operator">-&gt;</span>name<span class="token punctuation">,</span> p<span class="token operator">-&gt;</span>age<span class="token punctuation">,</span> p<span class="token operator">-&gt;</span>score<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h3 id="结构体指针作为函数参数"><a href="#结构体指针作为函数参数" class="header-anchor">#</a> 结构体指针作为函数参数</h3> <p>结构体变量名代表的是整个集合本身，作为函数参数时传递的整个集合，也就是所有成员，而不是像数组一样被编译器转换成一个指针，最好的办法就是使用结构体指针，这时由实参传向形参的只是一个地址，非常快速</p> <div class="language-C line-numbers-mode"><pre class="language-c"><code><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token comment">/*结构体指针作为函数参数*/</span>
+<span class="token keyword">struct</span> <span class="token class-name">stu</span> <span class="token punctuation">{</span>
+	<span class="token keyword">char</span><span class="token operator">*</span> name<span class="token punctuation">;</span>
+	<span class="token keyword">int</span> age<span class="token punctuation">;</span>
+	<span class="token keyword">float</span> score<span class="token punctuation">;</span>
+<span class="token punctuation">}</span> class<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+	<span class="token punctuation">{</span><span class="token string">&quot;张三&quot;</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span> <span class="token number">145.0</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token punctuation">{</span><span class="token string">&quot;李四&quot;</span><span class="token punctuation">,</span> <span class="token number">19</span><span class="token punctuation">,</span> <span class="token number">130.5</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token punctuation">{</span><span class="token string">&quot;王五&quot;</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span> <span class="token number">148.5</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token punctuation">{</span><span class="token string">&quot;陈六&quot;</span><span class="token punctuation">,</span> <span class="token number">17</span><span class="token punctuation">,</span> <span class="token number">139.0</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token punctuation">{</span><span class="token string">&quot;张七&quot;</span><span class="token punctuation">,</span> <span class="token number">17</span><span class="token punctuation">,</span> <span class="token number">144.5</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">/*计算全班学生的总成绩、平均成绩和以及 140 分以下的人数*/</span>
+<span class="token keyword">void</span> <span class="token function">stuMath</span><span class="token punctuation">(</span><span class="token keyword">struct</span> <span class="token class-name">stu</span> <span class="token operator">*</span>p<span class="token punctuation">,</span> <span class="token keyword">int</span> len<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	<span class="token keyword">float</span> sumScore <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+	<span class="token keyword">int</span> _140num <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> len<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+		sumScore <span class="token operator">+=</span> <span class="token punctuation">(</span>p <span class="token operator">+</span> i<span class="token punctuation">)</span><span class="token operator">-&gt;</span>score<span class="token punctuation">;</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>p <span class="token operator">+</span> i<span class="token punctuation">)</span><span class="token operator">-&gt;</span>score <span class="token operator">&lt;</span> <span class="token number">140</span><span class="token punctuation">)</span>
+		<span class="token punctuation">{</span>
+			_140num<span class="token operator">++</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;总成绩：%.1f\n平均成绩：%.1f\n140分以下的人数：%d\n&quot;</span><span class="token punctuation">,</span> sumScore<span class="token punctuation">,</span> sumScore<span class="token operator">/</span>len<span class="token punctuation">,</span> _140num<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	<span class="token keyword">int</span> len <span class="token operator">=</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span>class<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span><span class="token keyword">struct</span> <span class="token class-name">stu</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">stuMath</span><span class="token punctuation">(</span>class<span class="token punctuation">,</span> len<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br></div></div></div> <footer class="page-edit" style="display:none;"><!----> <!----></footer> <!----> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><!----><div></div><APlayer audio="" fixed="true" mini="true" theme="#282c344f" loop="loop" order="list" preload="auto" volume="0.7" mutex="true" lrc-type="0" list-folded="true" list-max-height="250" storage-name="vuepress-plugin-meting" id="aplayer-fixed"></APlayer></div></div>
+    <script src="/Blog/assets/js/app.ed588e5d.js" defer></script><script src="/Blog/assets/js/3.6a7c9835.js" defer></script><script src="/Blog/assets/js/1.f1f5dd21.js" defer></script><script src="/Blog/assets/js/46.cc7f5faf.js" defer></script><script src="/Blog/assets/js/8.0694a070.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>条件渲染 | Auc的个人博客</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/Blog/icons/favion.ico">
+    <link rel="manifest" href="/Blog/manifest.json">
+    <link rel="apple-touch-icon" href="/Blog/icons/icon-192x192.png">
+    <link rel="mask-icon" href="/Blog/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <script language="javascript" type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/Blog/js/MouseClickEffect.js"></script>
+    <meta name="description" content="岁不寒无以知松柏，事不难无以知君子">
+    <meta name="author" content="Auc">
+    <meta name="keywords" content="Auc的个人博客">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/icon-192x192.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/Blog/assets/css/0.styles.85d18feb.css" as="style"><link rel="preload" href="/Blog/assets/js/app.ed588e5d.js" as="script"><link rel="preload" href="/Blog/assets/js/3.6a7c9835.js" as="script"><link rel="preload" href="/Blog/assets/js/1.f1f5dd21.js" as="script"><link rel="preload" href="/Blog/assets/js/70.e87fd710.js" as="script"><link rel="preload" href="/Blog/assets/js/8.0694a070.js" as="script"><link rel="prefetch" href="/Blog/assets/js/10.12345786.js"><link rel="prefetch" href="/Blog/assets/js/11.0163dc94.js"><link rel="prefetch" href="/Blog/assets/js/12.47045407.js"><link rel="prefetch" href="/Blog/assets/js/13.845998fc.js"><link rel="prefetch" href="/Blog/assets/js/14.fbd70b53.js"><link rel="prefetch" href="/Blog/assets/js/15.61566dfe.js"><link rel="prefetch" href="/Blog/assets/js/16.9e736e50.js"><link rel="prefetch" href="/Blog/assets/js/17.514de8f0.js"><link rel="prefetch" href="/Blog/assets/js/18.2df4b2f3.js"><link rel="prefetch" href="/Blog/assets/js/19.81bf263d.js"><link rel="prefetch" href="/Blog/assets/js/20.d7cbafbe.js"><link rel="prefetch" href="/Blog/assets/js/21.86f89b49.js"><link rel="prefetch" href="/Blog/assets/js/22.5daf6fdd.js"><link rel="prefetch" href="/Blog/assets/js/23.5202da3d.js"><link rel="prefetch" href="/Blog/assets/js/24.1d27e2d2.js"><link rel="prefetch" href="/Blog/assets/js/25.5ce4353b.js"><link rel="prefetch" href="/Blog/assets/js/26.a8926fcc.js"><link rel="prefetch" href="/Blog/assets/js/27.a4ab804f.js"><link rel="prefetch" href="/Blog/assets/js/28.7fc7cf45.js"><link rel="prefetch" href="/Blog/assets/js/29.7ff050e8.js"><link rel="prefetch" href="/Blog/assets/js/30.7a9ca647.js"><link rel="prefetch" href="/Blog/assets/js/31.cc497155.js"><link rel="prefetch" href="/Blog/assets/js/32.778f100f.js"><link rel="prefetch" href="/Blog/assets/js/33.7092da09.js"><link rel="prefetch" href="/Blog/assets/js/34.417d60ce.js"><link rel="prefetch" href="/Blog/assets/js/35.96810473.js"><link rel="prefetch" href="/Blog/assets/js/36.79b57abd.js"><link rel="prefetch" href="/Blog/assets/js/37.f84eb5b9.js"><link rel="prefetch" href="/Blog/assets/js/38.259bf3bb.js"><link rel="prefetch" href="/Blog/assets/js/39.07a721e2.js"><link rel="prefetch" href="/Blog/assets/js/4.0f28c5e7.js"><link rel="prefetch" href="/Blog/assets/js/40.9d96150d.js"><link rel="prefetch" href="/Blog/assets/js/41.3e74adee.js"><link rel="prefetch" href="/Blog/assets/js/42.41908c41.js"><link rel="prefetch" href="/Blog/assets/js/43.23fe2d8e.js"><link rel="prefetch" href="/Blog/assets/js/44.361e503c.js"><link rel="prefetch" href="/Blog/assets/js/45.0addf09a.js"><link rel="prefetch" href="/Blog/assets/js/46.cc7f5faf.js"><link rel="prefetch" href="/Blog/assets/js/47.ffd993c1.js"><link rel="prefetch" href="/Blog/assets/js/48.12a48ca2.js"><link rel="prefetch" href="/Blog/assets/js/49.40973271.js"><link rel="prefetch" href="/Blog/assets/js/5.d0743884.js"><link rel="prefetch" href="/Blog/assets/js/50.878bb86c.js"><link rel="prefetch" href="/Blog/assets/js/51.6f54ca17.js"><link rel="prefetch" href="/Blog/assets/js/52.bdeb1d2c.js"><link rel="prefetch" href="/Blog/assets/js/53.ff1b02d8.js"><link rel="prefetch" href="/Blog/assets/js/54.2e479b09.js"><link rel="prefetch" href="/Blog/assets/js/55.31a06e95.js"><link rel="prefetch" href="/Blog/assets/js/56.ef312edb.js"><link rel="prefetch" href="/Blog/assets/js/57.0968b508.js"><link rel="prefetch" href="/Blog/assets/js/58.22427c8a.js"><link rel="prefetch" href="/Blog/assets/js/59.5b6e01cf.js"><link rel="prefetch" href="/Blog/assets/js/6.7d01f74f.js"><link rel="prefetch" href="/Blog/assets/js/60.5592ec2c.js"><link rel="prefetch" href="/Blog/assets/js/61.99cd26ce.js"><link rel="prefetch" href="/Blog/assets/js/62.e52fd219.js"><link rel="prefetch" href="/Blog/assets/js/63.5c46fe21.js"><link rel="prefetch" href="/Blog/assets/js/64.dac18f6f.js"><link rel="prefetch" href="/Blog/assets/js/65.0c8e559a.js"><link rel="prefetch" href="/Blog/assets/js/66.4b85a574.js"><link rel="prefetch" href="/Blog/assets/js/67.af6a384c.js"><link rel="prefetch" href="/Blog/assets/js/68.d7b35cd1.js"><link rel="prefetch" href="/Blog/assets/js/69.321dff75.js"><link rel="prefetch" href="/Blog/assets/js/7.fede9a6f.js"><link rel="prefetch" href="/Blog/assets/js/71.ed2b7723.js"><link rel="prefetch" href="/Blog/assets/js/72.602602b0.js"><link rel="prefetch" href="/Blog/assets/js/73.98f4a444.js"><link rel="prefetch" href="/Blog/assets/js/74.9e03eae0.js"><link rel="prefetch" href="/Blog/assets/js/9.43ede2c9.js">
+    <link rel="stylesheet" href="/Blog/assets/css/0.styles.85d18feb.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-2d5f533b><div data-v-2d5f533b><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-2d5f533b data-v-2d5f533b><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-64685f0e data-v-2d5f533b data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>Auc的个人博客</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>Auc</span>
+            
+          <span data-v-64685f0e>2020 - </span>
+          2021
+        </a></span></div></div> <div class="hide" data-v-2d5f533b><header class="navbar" data-v-2d5f533b><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Blog/" class="home-link router-link-active"><img src="/Blog/assets/img/logo.png" alt="Auc的个人博客" class="logo"> <span class="site-name">Auc的个人博客</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-theme"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">选择一个主题吧~</h4> <ul class="color-mode-options"><li class="dark">暗黑</li><li class="auto active">自动</li><li class="light">明亮</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Blog/categories/JavaScript/" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/categories/Vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/categories/数据结构与算法/" class="nav-link"><i class="iconfont undefined"></i>
+  数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/categories/文档/" class="nav-link"><i class="iconfont undefined"></i>
+  文档
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/categories/面试题/" class="nav-link"><i class="iconfont undefined"></i>
+  面试题
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/categories/笔记/" class="nav-link"><i class="iconfont undefined"></i>
+  笔记
+</a></li></ul></div></div><div class="nav-item"><a href="/Blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-blog"></i>
+      笔记
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Blog/notes/CSS/" class="nav-link"><i class="iconfont undefined"></i>
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/notes/ES6/ES6-00.html" class="nav-link"><i class="iconfont undefined"></i>
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/notes/JavaScript/JavaScript进阶/ES5-00.html" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/notes/Vue/Vue-basic/vue-00.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/notes/C/C-00.html" class="nav-link"><i class="iconfont undefined"></i>
+  C语言
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Blog/document/Vue-api/" class="nav-link"><i class="iconfont undefined"></i>
+  Vueのapi
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/document/Vue-Router/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue Router
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/document/axios/" class="nav-link"><i class="iconfont undefined"></i>
+  axios
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/document/Vue-cli/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue CLI
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-coding"></i>
+      面试
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Blog/exercises/JS/" class="nav-link"><i class="iconfont undefined"></i>
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/exercises/Vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/exercises/basic/" class="nav-link"><i class="iconfont undefined"></i>
+  基础
+</a></li></ul></div></div><div class="nav-item"><a href="/Blog/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-tongzhi"></i>
+      联系我
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Au-c/Blog" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-2d5f533b></div> <aside class="sidebar" data-v-2d5f533b><div class="personal-info-wrapper" data-v-ca798c94 data-v-2d5f533b><img src="/Blog/assets/img/user.png" alt="author-avatar" class="personal-img" data-v-ca798c94> <h3 class="name" data-v-ca798c94>
+    Auc
+  </h3> <div class="num" data-v-ca798c94><div data-v-ca798c94><h3 data-v-ca798c94>62</h3> <h6 data-v-ca798c94>文章</h6></div> <div data-v-ca798c94><h3 data-v-ca798c94>11</h3> <h6 data-v-ca798c94>标签</h6></div></div> <hr data-v-ca798c94></div> <nav class="nav-links"><div class="nav-item"><a href="/Blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Blog/categories/JavaScript/" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/categories/Vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/categories/数据结构与算法/" class="nav-link"><i class="iconfont undefined"></i>
+  数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/categories/文档/" class="nav-link"><i class="iconfont undefined"></i>
+  文档
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/categories/面试题/" class="nav-link"><i class="iconfont undefined"></i>
+  面试题
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/categories/笔记/" class="nav-link"><i class="iconfont undefined"></i>
+  笔记
+</a></li></ul></div></div><div class="nav-item"><a href="/Blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-blog"></i>
+      笔记
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Blog/notes/CSS/" class="nav-link"><i class="iconfont undefined"></i>
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/notes/ES6/ES6-00.html" class="nav-link"><i class="iconfont undefined"></i>
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/notes/JavaScript/JavaScript进阶/ES5-00.html" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/notes/Vue/Vue-basic/vue-00.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/notes/C/C-00.html" class="nav-link"><i class="iconfont undefined"></i>
+  C语言
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Blog/document/Vue-api/" class="nav-link"><i class="iconfont undefined"></i>
+  Vueのapi
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/document/Vue-Router/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue Router
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/document/axios/" class="nav-link"><i class="iconfont undefined"></i>
+  axios
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/document/Vue-cli/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue CLI
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-coding"></i>
+      面试
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Blog/exercises/JS/" class="nav-link"><i class="iconfont undefined"></i>
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/exercises/Vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/exercises/basic/" class="nav-link"><i class="iconfont undefined"></i>
+  基础
+</a></li></ul></div></div><div class="nav-item"><a href="/Blog/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-tongzhi"></i>
+      联系我
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Au-c/Blog" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Vue-basic</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Blog/notes/Vue/Vue-basic/vue-00.html" class="sidebar-link">写在前面</a></li><li><a href="/Blog/notes/Vue/Vue-basic/vue-01.html" class="sidebar-link">Vue.js概述</a></li><li><a href="/Blog/notes/Vue/Vue-basic/vue-02.html" class="sidebar-link">Vue实例</a></li><li><a href="/Blog/notes/Vue/Vue-basic/vue-03.html" class="sidebar-link">模板语法</a></li><li><a href="/Blog/notes/Vue/Vue-basic/vue-04.html" class="sidebar-link">Class与Style的绑定</a></li><li><a href="/Blog/notes/Vue/Vue-basic/vue-05.html" class="sidebar-link">计算属性和侦听器</a></li><li><a href="/Blog/notes/Vue/Vue-basic/vue-06.html" class="sidebar-link">条件渲染</a></li><li><a href="/Blog/notes/Vue/Vue-basic/vue-07.html" aria-current="page" class="active sidebar-link">条件渲染</a></li><li><a href="/Blog/notes/Vue/Vue-basic/vue-08.html" class="sidebar-link">可复用性 &amp; 组合</a></li><li><a href="/Blog/notes/Vue/Vue-basic/vue-09.html" class="sidebar-link">组件基础</a></li><li><a href="/Blog/notes/Vue/Vue-basic/vue-10.html" class="sidebar-link">规模化</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-64685f0e data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>条件渲染</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>Auc</span>
+            
+          <span data-v-64685f0e>2020 - </span>
+          2021
+        </a></span></div></div> <div data-v-2d5f533b><main class="page"><div class="page-title" style="display:none;"><h1 class="title">条件渲染</h1> <div data-v-3b7f5bdf><i class="iconfont reco-account" data-v-3b7f5bdf><span data-v-3b7f5bdf>Auc</span></i> <i class="iconfont reco-date" data-v-3b7f5bdf><span data-v-3b7f5bdf>2019-04-13</span></i> <i class="iconfont reco-eye" data-v-3b7f5bdf><span id="/Blog/notes/Vue/Vue-basic/vue-07.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-3b7f5bdf><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="iconfont reco-tag tags" data-v-3b7f5bdf><span class="tag-item" data-v-3b7f5bdf>Vue</span><span class="tag-item" data-v-3b7f5bdf>笔记</span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><h1 id="列表渲染"><a href="#列表渲染" class="header-anchor">#</a> 列表渲染</h1> <p>使用v-for指令来实现重复渲染列表，使用详见 vueのapi文档</p> <h2 id="维护状态"><a href="#维护状态" class="header-anchor">#</a> 维护状态</h2> <p>在 vueのapi文档 中，使用 v-for 指令迭代对象时，推荐为重复渲染的DOM模板绑定特殊的attribute key属性，在了解其原因之前先说明Vue的就地更新策略。</p> <h3 id="vue的就地更新策略"><a href="#vue的就地更新策略" class="header-anchor">#</a> Vue的就地更新策略</h3> <p>Vue使用就地更新策略来更新绑定有v-for指令的列表元素。</p> <p><strong>更新机制</strong></p> <ol><li>在Vue系统中，列表的每一项都有其索引，当列表数据更新时，Vue会按照索引顺序比对新旧数据。</li> <li>只再次渲染发生改变的DOM节点，没有更新的列表数据所在的DOM节点会被复用。 这减少了性能开销。</li></ol> <div class="language-HTML {.line-numbers} line-numbers-mode"><pre class="language-html"><code>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>app<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- 功能：点击按钮往列表尾部添加元素 --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>pushValue()<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>changeValue<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>item in arr<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>{{ item }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><div class="language-JavaScript {.line-numbers} line-numbers-mode"><pre class="language-javascript"><code>    <span class="token keyword">const</span> vm <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      el<span class="token operator">:</span> <span class="token string">'#app'</span><span class="token punctuation">,</span>
+      data<span class="token operator">:</span> <span class="token punctuation">{</span>
+        arr<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token function">pushValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span>arr<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p><strong>结果对比</strong></p><div align="left"><img src="https://cdn.jsdelivr.net/gh/Au-c/PicGo@main/notes/markdownPic/20201010145531.png" width="400"><br></div><p></p> <p>由上图可以看出，在列表尾部添加了一项元素。</p> <ul><li>就地更新策略，按照DOM节点的索引顺序从第一项比对前后数据，发现前五项没有更新，复用。</li> <li>检测到新添加了第六项数据，只渲染第六项所更新的数据。(右图可见第六项闪烁)</li></ul> <h3 id="绑定特殊的attribute-key属性"><a href="#绑定特殊的attribute-key属性" class="header-anchor">#</a> 绑定特殊的attribute key属性</h3> <div class="custom-block tip"><p class="custom-block-title">问题引入</p> <p>由上例，要注意一句话，就地更新前，会<strong>按照DOM节点的索引顺序</strong>从第一项比对前后数据。
+直接修改元素的值或者从最后插入元素，这些都不会更改原来的DOM节点排序。
+但情况来了：<em>从前面后者中间插入DOM节点，这就将DOM节点前后排列的顺序更改。</em></p></div> <div class="language-JavaScript {.line-numbers} line-numbers-mode"><pre class="language-javascript"><code>  <span class="token function">unshiftValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>arr<span class="token punctuation">.</span><span class="token function">unshift</span><span class="token punctuation">(</span><span class="token number">000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><strong>1. 前后结果对比</strong></p><div align="left"><img src="https://cdn.jsdelivr.net/gh/Au-c/PicGo@main/notes/markdownPic/20201010171545.png" width="400"><br></div><p></p> <p>由上图可以看出，当在列表头部插入一个元素时。</p> <ul><li>就地更新策略，第一项元素变成新添加的，原来各项的次序都加了一</li> <li>Vue进行前后对比，各项元素都发生了改变，就全部更新了，这种默认的策略当有大量元素时，性能并不高。</li></ul> <p><strong>2. 解决方案：</strong></p> <p>为了最大限度的保持元素复用，优化此种情况的性能，引入attribute key，介绍见 vueのapi文档。</p> <div class="language-HTML {.line-numbers} line-numbers-mode"><pre class="language-html"><code><span class="token comment">&lt;!-- 注意 :key的预期值要为唯一标识 --&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>item in arr<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>item<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>{{ item }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>这样，每一项都有自己的的唯一标识后，系统就可以通过另一种方式，通过key属性的不同来决定哪项复用，哪项更新渲染了。
+如下，只渲染了添加的第一项，其他的复用了起来。
+</p><div align="left"><img src="https://cdn.jsdelivr.net/gh/Au-c/PicGo@main/notes/markdownPic/20201010174301.png" width="300"><br></div><p></p></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">最近更新于: </span> <span class="time">2020年11月24日16时</span></div></footer> <!----> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><!----><div></div><APlayer audio="" fixed="true" mini="true" theme="#282c344f" loop="loop" order="list" preload="auto" volume="0.7" mutex="true" lrc-type="0" list-folded="true" list-max-height="250" storage-name="vuepress-plugin-meting" id="aplayer-fixed"></APlayer></div></div>
+    <script src="/Blog/assets/js/app.ed588e5d.js" defer></script><script src="/Blog/assets/js/3.6a7c9835.js" defer></script><script src="/Blog/assets/js/1.f1f5dd21.js" defer></script><script src="/Blog/assets/js/70.e87fd710.js" defer></script><script src="/Blog/assets/js/8.0694a070.js" defer></script>
+  </body>
+</html>

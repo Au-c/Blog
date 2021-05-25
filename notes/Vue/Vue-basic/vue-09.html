@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>组件基础 | Auc的个人博客</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/Blog/icons/favion.ico">
+    <link rel="manifest" href="/Blog/manifest.json">
+    <link rel="apple-touch-icon" href="/Blog/icons/icon-192x192.png">
+    <link rel="mask-icon" href="/Blog/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <script language="javascript" type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/Blog/js/MouseClickEffect.js"></script>
+    <meta name="description" content="岁不寒无以知松柏，事不难无以知君子">
+    <meta name="author" content="Auc">
+    <meta name="keywords" content="Auc的个人博客">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/icon-192x192.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/Blog/assets/css/0.styles.85d18feb.css" as="style"><link rel="preload" href="/Blog/assets/js/app.ed588e5d.js" as="script"><link rel="preload" href="/Blog/assets/js/3.6a7c9835.js" as="script"><link rel="preload" href="/Blog/assets/js/1.f1f5dd21.js" as="script"><link rel="preload" href="/Blog/assets/js/72.602602b0.js" as="script"><link rel="preload" href="/Blog/assets/js/8.0694a070.js" as="script"><link rel="prefetch" href="/Blog/assets/js/10.12345786.js"><link rel="prefetch" href="/Blog/assets/js/11.0163dc94.js"><link rel="prefetch" href="/Blog/assets/js/12.47045407.js"><link rel="prefetch" href="/Blog/assets/js/13.845998fc.js"><link rel="prefetch" href="/Blog/assets/js/14.fbd70b53.js"><link rel="prefetch" href="/Blog/assets/js/15.61566dfe.js"><link rel="prefetch" href="/Blog/assets/js/16.9e736e50.js"><link rel="prefetch" href="/Blog/assets/js/17.514de8f0.js"><link rel="prefetch" href="/Blog/assets/js/18.2df4b2f3.js"><link rel="prefetch" href="/Blog/assets/js/19.81bf263d.js"><link rel="prefetch" href="/Blog/assets/js/20.d7cbafbe.js"><link rel="prefetch" href="/Blog/assets/js/21.86f89b49.js"><link rel="prefetch" href="/Blog/assets/js/22.5daf6fdd.js"><link rel="prefetch" href="/Blog/assets/js/23.5202da3d.js"><link rel="prefetch" href="/Blog/assets/js/24.1d27e2d2.js"><link rel="prefetch" href="/Blog/assets/js/25.5ce4353b.js"><link rel="prefetch" href="/Blog/assets/js/26.a8926fcc.js"><link rel="prefetch" href="/Blog/assets/js/27.a4ab804f.js"><link rel="prefetch" href="/Blog/assets/js/28.7fc7cf45.js"><link rel="prefetch" href="/Blog/assets/js/29.7ff050e8.js"><link rel="prefetch" href="/Blog/assets/js/30.7a9ca647.js"><link rel="prefetch" href="/Blog/assets/js/31.cc497155.js"><link rel="prefetch" href="/Blog/assets/js/32.778f100f.js"><link rel="prefetch" href="/Blog/assets/js/33.7092da09.js"><link rel="prefetch" href="/Blog/assets/js/34.417d60ce.js"><link rel="prefetch" href="/Blog/assets/js/35.96810473.js"><link rel="prefetch" href="/Blog/assets/js/36.79b57abd.js"><link rel="prefetch" href="/Blog/assets/js/37.f84eb5b9.js"><link rel="prefetch" href="/Blog/assets/js/38.259bf3bb.js"><link rel="prefetch" href="/Blog/assets/js/39.07a721e2.js"><link rel="prefetch" href="/Blog/assets/js/4.0f28c5e7.js"><link rel="prefetch" href="/Blog/assets/js/40.9d96150d.js"><link rel="prefetch" href="/Blog/assets/js/41.3e74adee.js"><link rel="prefetch" href="/Blog/assets/js/42.41908c41.js"><link rel="prefetch" href="/Blog/assets/js/43.23fe2d8e.js"><link rel="prefetch" href="/Blog/assets/js/44.361e503c.js"><link rel="prefetch" href="/Blog/assets/js/45.0addf09a.js"><link rel="prefetch" href="/Blog/assets/js/46.cc7f5faf.js"><link rel="prefetch" href="/Blog/assets/js/47.ffd993c1.js"><link rel="prefetch" href="/Blog/assets/js/48.12a48ca2.js"><link rel="prefetch" href="/Blog/assets/js/49.40973271.js"><link rel="prefetch" href="/Blog/assets/js/5.d0743884.js"><link rel="prefetch" href="/Blog/assets/js/50.878bb86c.js"><link rel="prefetch" href="/Blog/assets/js/51.6f54ca17.js"><link rel="prefetch" href="/Blog/assets/js/52.bdeb1d2c.js"><link rel="prefetch" href="/Blog/assets/js/53.ff1b02d8.js"><link rel="prefetch" href="/Blog/assets/js/54.2e479b09.js"><link rel="prefetch" href="/Blog/assets/js/55.31a06e95.js"><link rel="prefetch" href="/Blog/assets/js/56.ef312edb.js"><link rel="prefetch" href="/Blog/assets/js/57.0968b508.js"><link rel="prefetch" href="/Blog/assets/js/58.22427c8a.js"><link rel="prefetch" href="/Blog/assets/js/59.5b6e01cf.js"><link rel="prefetch" href="/Blog/assets/js/6.7d01f74f.js"><link rel="prefetch" href="/Blog/assets/js/60.5592ec2c.js"><link rel="prefetch" href="/Blog/assets/js/61.99cd26ce.js"><link rel="prefetch" href="/Blog/assets/js/62.e52fd219.js"><link rel="prefetch" href="/Blog/assets/js/63.5c46fe21.js"><link rel="prefetch" href="/Blog/assets/js/64.dac18f6f.js"><link rel="prefetch" href="/Blog/assets/js/65.0c8e559a.js"><link rel="prefetch" href="/Blog/assets/js/66.4b85a574.js"><link rel="prefetch" href="/Blog/assets/js/67.af6a384c.js"><link rel="prefetch" href="/Blog/assets/js/68.d7b35cd1.js"><link rel="prefetch" href="/Blog/assets/js/69.321dff75.js"><link rel="prefetch" href="/Blog/assets/js/7.fede9a6f.js"><link rel="prefetch" href="/Blog/assets/js/70.e87fd710.js"><link rel="prefetch" href="/Blog/assets/js/71.ed2b7723.js"><link rel="prefetch" href="/Blog/assets/js/73.98f4a444.js"><link rel="prefetch" href="/Blog/assets/js/74.9e03eae0.js"><link rel="prefetch" href="/Blog/assets/js/9.43ede2c9.js">
+    <link rel="stylesheet" href="/Blog/assets/css/0.styles.85d18feb.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-2d5f533b><div data-v-2d5f533b><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-2d5f533b data-v-2d5f533b><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-64685f0e data-v-2d5f533b data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>Auc的个人博客</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>Auc</span>
+            
+          <span data-v-64685f0e>2020 - </span>
+          2021
+        </a></span></div></div> <div class="hide" data-v-2d5f533b><header class="navbar" data-v-2d5f533b><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Blog/" class="home-link router-link-active"><img src="/Blog/assets/img/logo.png" alt="Auc的个人博客" class="logo"> <span class="site-name">Auc的个人博客</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-theme"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">选择一个主题吧~</h4> <ul class="color-mode-options"><li class="dark">暗黑</li><li class="auto active">自动</li><li class="light">明亮</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Blog/categories/JavaScript/" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/categories/Vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/categories/数据结构与算法/" class="nav-link"><i class="iconfont undefined"></i>
+  数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/categories/文档/" class="nav-link"><i class="iconfont undefined"></i>
+  文档
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/categories/面试题/" class="nav-link"><i class="iconfont undefined"></i>
+  面试题
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/categories/笔记/" class="nav-link"><i class="iconfont undefined"></i>
+  笔记
+</a></li></ul></div></div><div class="nav-item"><a href="/Blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-blog"></i>
+      笔记
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Blog/notes/CSS/" class="nav-link"><i class="iconfont undefined"></i>
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/notes/ES6/ES6-00.html" class="nav-link"><i class="iconfont undefined"></i>
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/notes/JavaScript/JavaScript进阶/ES5-00.html" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/notes/Vue/Vue-basic/vue-00.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/notes/C/C-00.html" class="nav-link"><i class="iconfont undefined"></i>
+  C语言
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Blog/document/Vue-api/" class="nav-link"><i class="iconfont undefined"></i>
+  Vueのapi
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/document/Vue-Router/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue Router
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/document/axios/" class="nav-link"><i class="iconfont undefined"></i>
+  axios
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/document/Vue-cli/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue CLI
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-coding"></i>
+      面试
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Blog/exercises/JS/" class="nav-link"><i class="iconfont undefined"></i>
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/exercises/Vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/exercises/basic/" class="nav-link"><i class="iconfont undefined"></i>
+  基础
+</a></li></ul></div></div><div class="nav-item"><a href="/Blog/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-tongzhi"></i>
+      联系我
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Au-c/Blog" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-2d5f533b></div> <aside class="sidebar" data-v-2d5f533b><div class="personal-info-wrapper" data-v-ca798c94 data-v-2d5f533b><img src="/Blog/assets/img/user.png" alt="author-avatar" class="personal-img" data-v-ca798c94> <h3 class="name" data-v-ca798c94>
+    Auc
+  </h3> <div class="num" data-v-ca798c94><div data-v-ca798c94><h3 data-v-ca798c94>62</h3> <h6 data-v-ca798c94>文章</h6></div> <div data-v-ca798c94><h3 data-v-ca798c94>11</h3> <h6 data-v-ca798c94>标签</h6></div></div> <hr data-v-ca798c94></div> <nav class="nav-links"><div class="nav-item"><a href="/Blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Blog/categories/JavaScript/" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/categories/Vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/categories/数据结构与算法/" class="nav-link"><i class="iconfont undefined"></i>
+  数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/categories/文档/" class="nav-link"><i class="iconfont undefined"></i>
+  文档
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/categories/面试题/" class="nav-link"><i class="iconfont undefined"></i>
+  面试题
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/categories/笔记/" class="nav-link"><i class="iconfont undefined"></i>
+  笔记
+</a></li></ul></div></div><div class="nav-item"><a href="/Blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-blog"></i>
+      笔记
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Blog/notes/CSS/" class="nav-link"><i class="iconfont undefined"></i>
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/notes/ES6/ES6-00.html" class="nav-link"><i class="iconfont undefined"></i>
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/notes/JavaScript/JavaScript进阶/ES5-00.html" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/notes/Vue/Vue-basic/vue-00.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/notes/C/C-00.html" class="nav-link"><i class="iconfont undefined"></i>
+  C语言
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      文档
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Blog/document/Vue-api/" class="nav-link"><i class="iconfont undefined"></i>
+  Vueのapi
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/document/Vue-Router/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue Router
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/document/axios/" class="nav-link"><i class="iconfont undefined"></i>
+  axios
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/document/Vue-cli/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue CLI
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-coding"></i>
+      面试
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Blog/exercises/JS/" class="nav-link"><i class="iconfont undefined"></i>
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/exercises/Vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/Blog/exercises/basic/" class="nav-link"><i class="iconfont undefined"></i>
+  基础
+</a></li></ul></div></div><div class="nav-item"><a href="/Blog/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-tongzhi"></i>
+      联系我
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/Au-c/Blog" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Vue-basic</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Blog/notes/Vue/Vue-basic/vue-00.html" class="sidebar-link">写在前面</a></li><li><a href="/Blog/notes/Vue/Vue-basic/vue-01.html" class="sidebar-link">Vue.js概述</a></li><li><a href="/Blog/notes/Vue/Vue-basic/vue-02.html" class="sidebar-link">Vue实例</a></li><li><a href="/Blog/notes/Vue/Vue-basic/vue-03.html" class="sidebar-link">模板语法</a></li><li><a href="/Blog/notes/Vue/Vue-basic/vue-04.html" class="sidebar-link">Class与Style的绑定</a></li><li><a href="/Blog/notes/Vue/Vue-basic/vue-05.html" class="sidebar-link">计算属性和侦听器</a></li><li><a href="/Blog/notes/Vue/Vue-basic/vue-06.html" class="sidebar-link">条件渲染</a></li><li><a href="/Blog/notes/Vue/Vue-basic/vue-07.html" class="sidebar-link">条件渲染</a></li><li><a href="/Blog/notes/Vue/Vue-basic/vue-08.html" class="sidebar-link">可复用性 &amp; 组合</a></li><li><a href="/Blog/notes/Vue/Vue-basic/vue-09.html" aria-current="page" class="active sidebar-link">组件基础</a></li><li><a href="/Blog/notes/Vue/Vue-basic/vue-10.html" class="sidebar-link">规模化</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-64685f0e data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>组件基础</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>Auc</span>
+            
+          <span data-v-64685f0e>2020 - </span>
+          2021
+        </a></span></div></div> <div data-v-2d5f533b><main class="page"><div class="page-title" style="display:none;"><h1 class="title">组件基础</h1> <div data-v-3b7f5bdf><i class="iconfont reco-account" data-v-3b7f5bdf><span data-v-3b7f5bdf>Auc</span></i> <i class="iconfont reco-date" data-v-3b7f5bdf><span data-v-3b7f5bdf>2019-04-20</span></i> <i class="iconfont reco-eye" data-v-3b7f5bdf><span id="/Blog/notes/Vue/Vue-basic/vue-09.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-3b7f5bdf><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="iconfont reco-tag tags" data-v-3b7f5bdf><span class="tag-item" data-v-3b7f5bdf>Vue</span><span class="tag-item" data-v-3b7f5bdf>笔记</span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><h1 id="组件基础"><a href="#组件基础" class="header-anchor">#</a> 组件基础</h1> <h2 id="什么是组件"><a href="#什么是组件" class="header-anchor">#</a> 什么是组件</h2> <ol><li>模块化：拆分JS功能，单个js文件就是一个模块。</li> <li>组件化：整体拆分结构、样式、行为。</li></ol> <p>在Vue中，组件为<strong>可复用</strong>的<strong>Vue实例</strong></p> <ul><li>Vue实例，说明是一个实例对象，该对象拥有 new Vue() 的大多数选项，比如：data, methods... 但是没有el，el只有根组件有。</li> <li>可复用：组件一旦定义，可以使用多次。</li></ul> <div class="custom-block tip"><p class="custom-block-title">注意</p> <p>关于组件的可复用：
+每个组件都会各自独立维护它的 count。因为你每用一次组件，就会有一个它的新实例被创建</p></div> <h2 id="注册组件"><a href="#注册组件" class="header-anchor">#</a> 注册组件</h2> <ol><li>注册全局组件：使用Vue.component()。详细使用见vueのapi文档。</li> <li>注册局部组件：在Vue()实例中添加componets选项。</li></ol> <div class="language-HTML {.line-numbers} line-numbers-mode"><pre class="language-html"><code> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>app<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+   <span class="token comment">&lt;!-- 使用组件 --&gt;</span>
+   <span class="token comment">&lt;!-- 这里可以看出组件可以复用 --&gt;</span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>auc-div</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>auc-div</span><span class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>auc-div</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>auc-div</span><span class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>auc-div2</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>auc-div2</span><span class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>auc-div2</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>auc-div2</span><span class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>auc-div2</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>auc-div2</span><span class="token punctuation">&gt;</span></span>
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><div class="language-JavaScript {.line-numbers} line-numbers-mode"><pre class="language-javascript"><code>   <span class="token comment">// Vue.component()注册全局组件</span>
+   Vue<span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span><span class="token string">'auc-div'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+     <span class="token comment">// template选项</span>
+     <span class="token comment">//注意：该选项中模板需要一个大的容器包裹才可以渲染</span>
+     template<span class="token operator">:</span>
+       <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+       &lt;div&gt;
+         &lt;p&gt;{{ count }}&lt;/p&gt;
+         &lt;button @click=&quot;fn&quot;&gt;这是全局组件button&lt;/button&gt;
+     &lt;/div&gt;
+     </span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+     <span class="token comment">//其他选项：</span>
+     <span class="token comment">// 组件中data选项，必须为一个函数，每次使用组件，执行该函数，将函数返回的对象作为该组件的数据对象</span>
+     <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+       <span class="token keyword">return</span> <span class="token punctuation">{</span>
+         count<span class="token operator">:</span> <span class="token number">0</span>
+       <span class="token punctuation">}</span>
+     <span class="token punctuation">}</span><span class="token punctuation">,</span>
+     methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+       <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+         <span class="token keyword">this</span><span class="token punctuation">.</span>count<span class="token operator">++</span><span class="token punctuation">;</span>
+       <span class="token punctuation">}</span>
+     <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+   <span class="token keyword">const</span> vm <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+     el<span class="token operator">:</span> <span class="token string">'#app'</span><span class="token punctuation">,</span>
+     data<span class="token operator">:</span> <span class="token punctuation">{</span>
+     <span class="token punctuation">}</span><span class="token punctuation">,</span>
+     <span class="token comment">// components选项中注册局部组件</span>
+     components<span class="token operator">:</span> <span class="token punctuation">{</span>
+       <span class="token string">'auc-div2'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+         template<span class="token operator">:</span>
+           <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+               &lt;div&gt;
+                 &lt;h2&gt;这是局部组件&lt;/h2&gt;
+                 &lt;button&gt;这是局部组件按钮&lt;/button&gt;
+               &lt;/div&gt;
+           </span><span class="token template-punctuation string">`</span></span>
+       <span class="token punctuation">}</span>
+     <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br></div></div><h2 id="组件树"><a href="#组件树" class="header-anchor">#</a> 组件树</h2> <p>通常一个应用会以一棵嵌套的组件树的形式来组织</p> <h3 id="组成"><a href="#组成" class="header-anchor">#</a> 组成</h3> <p>通常会包含一个根组件，由于是树形结构，所以两个组件之间的关系是：父子关系或者兄弟关系。
+</p><div align="left"><img src="https://cdn.jsdelivr.net/gh/Au-c/PicGo@main/notes/markdownPic/components.png" width="500"></div><p></p> <div class="custom-block tip"><p class="custom-block-title">注意</p> <p>这些组件，必须注册才可以被Vue系统识别</p></div> <h3 id="子组件与父组件之间的数据传递规则"><a href="#子组件与父组件之间的数据传递规则" class="header-anchor">#</a> 子组件与父组件之间的数据传递规则</h3> <ul><li>组件之间的数据都是独立的，组件之间不可以随意的访问彼此的数据。</li> <li>父子组件之间的数据传递：遵循单向数据流原则。</li></ul> <div class="custom-block tip"><p class="custom-block-title">单向数据流原则</p> <ol><li>父组件传递给子组件数据，子组件接收数据。</li> <li>父组件的数据变化了, 自动向下重新流动, 更新与父组件数据有关联的子组件。</li> <li>反之传递不被允许，通过子组件修改父组件的数据也不被允许，原因是修改父组件数据，会影响其他兄弟组件的数据。</li></ol></div> <h3 id="父子组件数据传递方法"><a href="#父子组件数据传递方法" class="header-anchor">#</a> 父子组件数据传递方法</h3> <ol><li>父 =&gt; 子</li></ol> <ul><li>数据接收：子组件通过添加<strong>自定义标签属性</strong>来接收父组件传递过来的数据。（自定义标签属性名注意全小写）</li> <li>数据存储：子组件通过内部添加<strong>props数据选项</strong>来存储传递过来的数据。props选项详见api文档。</li></ul> <div class="language-HTML {.line-numbers} line-numbers-mode"><pre class="language-html"><code>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>app<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>son</span> <span class="token attr-name">:attr1</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>message<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:attr2</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>letter<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>son</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><div class="language-JavaScript {.line-numbers} line-numbers-mode"><pre class="language-javascript"><code>    <span class="token comment">//子组件</span>
+    Vue<span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span><span class="token string">'son'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      template<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+        &lt;div&gt;
+          &lt;h3&gt;子组件&lt;/h3&gt;
+          &lt;p&gt;自己的数据：{{ msg }}&lt;/p&gt;
+          &lt;p&gt;父组件传递的数据：{{ attr1 }}    {{ attr2 }}&lt;/p&gt;
+        &lt;/div&gt;
+      </span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+      <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">{</span>
+          msg<span class="token operator">:</span> <span class="token string">'this is a test message by son'</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token comment">//props选项中的数据与data中的类似，可以直接使用</span>
+      props<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'attr1'</span><span class="token punctuation">,</span> <span class="token string">'attr2'</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">//父组件，也是根组件</span>
+    <span class="token keyword">const</span> vm <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      el<span class="token operator">:</span> <span class="token string">'#app'</span><span class="token punctuation">,</span>
+      data<span class="token operator">:</span> <span class="token punctuation">{</span>
+        message<span class="token operator">:</span> <span class="token string">'hello son by father'</span><span class="token punctuation">,</span>
+        letter<span class="token operator">:</span> <span class="token string">'this is a test letter by father'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><p><strong>上例数据流图：</strong></p><div align="left"><img src="https://cdn.jsdelivr.net/gh/Au-c/PicGo@main/notes/markdownPic/20201015105519.png" width="800"></div><p></p> <div class="custom-block tip"><p class="custom-block-title">流程解析</p> <ol><li>在son组件的HTML标签上自定义了两个属性: attr1 与 attr2.</li> <li>因为为响应式数据，所以利用v-bind绑定这两个属性的值，预期值对应父组件data数据对象中的message、letter数据项。</li> <li>在子组件中添加props选项，存储自定义的两个属性的值。</li> <li>利用template选项，并结合文本插值，数据对应子组件props数据选型中存储的两个元素。动态渲染DOM。</li></ol></div> <ol start="2"><li>子 =&gt; 父：从子组件传递数据到父组件</li></ol> <h2 id="插槽"><a href="#插槽" class="header-anchor">#</a> 插槽</h2> <ul><li><strong>插槽</strong>：Vue的一套内容分发的 API。</li> <li><strong>特点</strong>：<code>&lt;slot&gt;</code> 元素作为承载分发内容的出口。插槽内可以<strong>包含任何模板代码，包括 HTML，甚至其他组件</strong>。</li> <li><strong>使用场景</strong>：这里可以与父子组件之间的数据传递比较。
+<ul><li>父子组件数据传递：适用于传递简单的数据，但是当需要传递HTML标签结构类数据时，无法实现。</li> <li>插槽：一般在封装组件时使用，并且可以定指HTML结构。</li></ul></li></ul> <h2 id="插槽的使用"><a href="#插槽的使用" class="header-anchor">#</a> 插槽的使用</h2> <h3 id="使用默认插槽"><a href="#使用默认插槽" class="header-anchor">#</a> 使用默认插槽</h3> <ul><li>在组件中：使用<code>&lt;slot&gt;&lt;/slot&gt;</code>标签作为分发内容的出口</li> <li>在组件HTML入口处，可直接使用 HTML 标签等模板代码，当然也可以使用<code>&lt;template&gt;&lt;/template&gt;</code> 包裹，当渲染时，将分发内容替换出口<code>&lt;slot&gt;&lt;/slot&gt;</code>标签。</li></ul> <h3 id="使用具名插槽"><a href="#使用具名插槽" class="header-anchor">#</a> 使用具名插槽</h3> <p><strong>1. 原因</strong>：任何分发内容都会以<code>&lt;slot&gt;&lt;/slot&gt;</code>作为出口，当需要指定不同出口时，使用具名插槽。</p> <p><strong>2. 使用</strong></p> <ul><li>在组件中给 slot 添加 name 属性 <code>&lt;slot name=&quot;sign&quot;&gt;&lt;/slot&gt;</code></li> <li>在入口，要使用 <code>&lt;template&gt;&lt;/template&gt;</code>  包裹，并且使用 <code>v-slot</code> 指令绑定 name 的属性值</li></ul> <p><strong>3. 渲染</strong>：在渲染时，使用 v-slot 指令绑定 name 的那些分发内容找到对应的slot标签作为出口，没有绑定的默认以<code>&lt;slot&gt;&lt;/slot&gt;</code>默认插槽作为出口。</p> <p><strong>4. 分发数据示意图</strong></p><div align="left"><img src="https://cdn.jsdelivr.net/gh/Au-c/PicGo@main/notes/markdownPic/20201015154824.png" width="800"></div><p></p> <div class="custom-block tip"><p class="custom-block-title">注意</p> <ol><li>当将分发内容的数据分发到各自出口后，会替换对应的slot标签，以 template 模板整体渲染到该组件对应DOM的位置。</li> <li>在上面的例子中，如果没有提供默认插槽出口，没有指定出口的内容将会被覆盖。</li></ol></div> <h3 id="使用作用域插槽"><a href="#使用作用域插槽" class="header-anchor">#</a> 使用作用域插槽</h3> <p>可以在<code>&lt;slot&gt;</code>元素上绑定在 attribute，被绑定的 attribute 称为插槽prop。</p> <ul><li>目的：原始插槽入口处数据基本写死，为了数据灵活性，引入作用域插槽。</li> <li>写法：
+<ul><li>入口处使用v-slot预期值，用一个对象来准备接收出口处的数据。</li> <li>slot出口处使用自定义标签作为数据源。</li></ul></li> <li>对比与公共原理：</li></ul> <p><strong>不使用作用域插槽</strong></p><div align="left"><img src="https://cdn.jsdelivr.net/gh/Au-c/PicGo@main/notes/markdownPic/20201016205612.png" width="600"></div><p></p> <p>入口处数据写死，被slot默认插槽接收后，由于数据写死，直接渲染死数据。</p> <p><strong>使用作用域插槽</strong></p><div align="left"><img src="https://cdn.jsdelivr.net/gh/Au-c/PicGo@main/notes/markdownPic/20201016205850.png" width="600"></div><p></p> <div class="custom-block tip"><p class="custom-block-title">分析</p> <ol><li>首先看入口处，使用 <code>&lt;template&gt;&lt;/template&gt;</code> 包裹，并且 v-slot 使用了预期值，这个预期值 numObj 是个对象。</li> <li><code>&lt;template&gt;&lt;/template&gt;</code> 整体以 slot 为出口，在出口处，num1 与 num2 两个自定义属性被 numObj 对象接收，在渲染时，使用了文本插值，内部使用 JS 表达式取 numObj 中存储的值。</li></ol></div> <p>💯 其实，你也可以让数据更为灵活。</p> <div class="language-JavaScript {.line-numbers} line-numbers-mode"><pre class="language-javascript"><code>    Vue<span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span><span class="token string">'test'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      template<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+        &lt;div&gt;
+          &lt;div&gt;这是作用域插槽&lt;/div&gt;
+
+          //看：这里将两个自定义属性的值与该组件的data选项中的数据绑定了。
+          &lt;slot :num1=&quot;data1&quot; :num2=&quot;data2&quot;&gt;&lt;/slot&gt;
+        &lt;/div&gt;
+      </span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+      <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">{</span>
+          data1<span class="token operator">:</span> <span class="token string">'01'</span><span class="token punctuation">,</span>
+          data2<span class="token operator">:</span> <span class="token string">'02'</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p>💯 当然，你可能想到了，结合前面的父子组件之间的数据传递，将数据源转到父组件上：这样如果数据从后台拿的话会更方便。</p> <div class="language-HTML {.line-numbers} line-numbers-mode"><pre class="language-html"><code>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>app<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>test</span> <span class="token attr-name">:data1</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>rootdata1<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:data2</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>rootdata2<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">v-slot</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>numObj<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>{{ numObj.num1}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>{{ numObj.num2}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>test</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><div class="language-JavaScript {.line-numbers} line-numbers-mode"><pre class="language-javascript"><code>    Vue<span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span><span class="token string">'test'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      template<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+        &lt;div&gt;
+          &lt;div&gt;这是作用域插槽&lt;/div&gt;
+          &lt;slot :num1=&quot;data1&quot; :num2=&quot;data2&quot;&gt;&lt;/slot&gt;
+        &lt;/div&gt;
+      </span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+      props<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'data1'</span><span class="token punctuation">,</span> <span class="token string">'data2'</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> vm <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      el<span class="token operator">:</span> <span class="token string">'#app'</span><span class="token punctuation">,</span>
+      data<span class="token operator">:</span> <span class="token punctuation">{</span>
+        rootdata1<span class="token operator">:</span> <span class="token string">'01'</span><span class="token punctuation">,</span>
+        rootdata2<span class="token operator">:</span> <span class="token string">'02'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">最近更新于: </span> <span class="time">2020年11月24日16时</span></div></footer> <!----> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><!----><div></div><APlayer audio="" fixed="true" mini="true" theme="#282c344f" loop="loop" order="list" preload="auto" volume="0.7" mutex="true" lrc-type="0" list-folded="true" list-max-height="250" storage-name="vuepress-plugin-meting" id="aplayer-fixed"></APlayer></div></div>
+    <script src="/Blog/assets/js/app.ed588e5d.js" defer></script><script src="/Blog/assets/js/3.6a7c9835.js" defer></script><script src="/Blog/assets/js/1.f1f5dd21.js" defer></script><script src="/Blog/assets/js/72.602602b0.js" defer></script><script src="/Blog/assets/js/8.0694a070.js" defer></script>
+  </body>
+</html>
